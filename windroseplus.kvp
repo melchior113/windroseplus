@@ -91,7 +91,8 @@ App.RapidStartup=False
 App.SmartExcludeExemptions=[".cfg",".conf",".config",".ini",".json",".xml",".properties",".kvp",".yml",".yaml",".toml",".lua"]
 App.SmartExcludeSupported=False
 App.DumpFullChildProcessTree=False
-App.MonitorChildProcessName=^.*WindroseServer\.exe.*$App.MonitorDirectChildOnly=False
+App.MonitorChildProcessName=^.*WindroseServer\.exe.*$
+App.MonitorDirectChildOnly=False
 App.SupportsUniversalSleep=False
 App.UseSteamQueryForStatus=False
 App.WakeupMode=Any
