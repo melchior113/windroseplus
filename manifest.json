@@ -1,9 +1,9 @@
 {
-	"id": "ec280171-c67b-4cf8-923f-dc27fea91ee1",
-	"authors": ["CubeCoders Limited", "AMP Community"],
-	"origin": "https://github.com/CubeCoders/AMPTemplates.git",
-	"url": "https://github.com/CubeCoders/AMPTemplates",
-	"imagefile": "",
-	"prefix": "",
-	"repotype": "AppTemplates"
+    "id": "melchior-windrose-local",
+    "authors": ["CubeCoders Limited", "AMP Community", "melchior"],
+    "origin": "https://github.com/melchior113/windroseplus.git",
+    "url": "https://github.com/melchior113/windroseplus",
+    "imagefile": "",
+    "prefix": "mwrlocal",
+    "repotype": "AppTemplates"
 }
