@@ -6,6 +6,23 @@
         "UpdateSourceData": "4129620",
         "UpdateSourceArgs": "3041230",
         "ForceDownloadPlatform": "Windows",
+        "SkipOnFailure": true
+    },
+    {
+        "UpdateStageName": "Windrose Download (Retry Wait)",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "/bin/bash",
+        "UpdateSourceArgs": "-c \"sleep 3\"",
+        "SkipOnFailure": true
+    },
+    {
+        "UpdateStageName": "Windrose Download (Retry)",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "SteamCMD",
+        "UpdateSourceData": "4129620",
+        "UpdateSourceArgs": "3041230",
+        "ForceDownloadPlatform": "Windows",
         "SkipOnFailure": false
     },
     {
@@ -40,7 +57,7 @@
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "Executable",
         "UpdateSourceData": "/bin/bash",
-        "UpdateSourceArgs": "-c \"echo '#!/bin/bash' > {{$FullBaseDir}}start.sh && echo 'exec /opt/wine-stable/bin/wine cmd /c {{$FullBaseDir}}StartWindrosePlusServer.bat' >> {{$FullBaseDir}}start.sh && chmod +x {{$FullBaseDir}}start.sh\"",
+        "UpdateSourceArgs": "-c \"echo '#!/bin/bash' > {{$FullBaseDir}}start.sh && echo 'wine cmd /c {{$FullBaseDir}}StartWindrosePlusServer.bat' >> {{$FullBaseDir}}start.sh && chmod +x {{$FullBaseDir}}start.sh\"",
         "SkipOnFailure": false
     }
 ]
