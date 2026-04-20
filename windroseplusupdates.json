@@ -34,5 +34,13 @@
         "UpdateSourceData": "/bin/bash",
         "UpdateSourceArgs": "-c \"rm -rf \\\"{{$FullRootDir}}.wine\\\" >/dev/null 2>&1; WINEPREFIX=\\\"{{$FullRootDir}}.wine\\\" WINEARCH=win64 WINEDEBUG=-all /usr/bin/wineboot --init\"",
         "SkipOnFailure": false
+    },
+    {
+        "UpdateStageName": "Create Launch Script",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "/bin/bash",
+        "UpdateSourceArgs": "-c \"echo '#!/bin/bash' > {{$FullBaseDir}}start.sh && echo 'exec /usr/bin/wine cmd /c {{$FullBaseDir}}StartWindrosePlusServer.bat' >> {{$FullBaseDir}}start.sh && chmod +x {{$FullBaseDir}}start.sh\"",
+        "SkipOnFailure": false
     }
 ]
