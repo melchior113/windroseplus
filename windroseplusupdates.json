@@ -40,7 +40,7 @@
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "Executable",
         "UpdateSourceData": "/bin/bash",
-        "UpdateSourceArgs": "-c \"echo '#!/bin/bash' > {{$FullBaseDir}}start.sh && echo 'exec /usr/bin/wine cmd /c {{$FullBaseDir}}StartWindrosePlusServer.bat' >> {{$FullBaseDir}}start.sh && chmod +x {{$FullBaseDir}}start.sh\"",
+        "UpdateSourceArgs": "-c \"echo '#!/bin/bash' > {{$FullBaseDir}}start.sh && echo 'exec /opt/wine-stable/bin/wine cmd /c {{$FullBaseDir}}StartWindrosePlusServer.bat' >> {{$FullBaseDir}}start.sh && chmod +x {{$FullBaseDir}}start.sh\"",
         "SkipOnFailure": false
     }
 ]
